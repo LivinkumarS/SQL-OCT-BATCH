@@ -1,0 +1,36 @@
+What is Database?
+>> A database is an organized collection of data. It can be easily manipulated.
+access, create, update and delete
+
+RDBMS --> Relational DB Management System, SQLDB
+------------------------------------------
+>> Data stored in form of Table(rows and columns).
+>> Relationship exist between 2 tables.
+Ex: MySQL, Oracle, PostgreSQL.... 
+to work with RDBMS --> SQL
+
+Non RDBMS, NoSQL 
+---------
+>> Data stored in form of Document, file....
+Ex: MongoDb, FireBase, MariaDB...
+
+SQL ---> Structured Query language 
+----------------------------------
+Basic Syntax
+-------------
+SELECT * FROM tbname; 
+select * from tbname;
+SeLeCt * fRoM tbname;
+
+>> SQL Keywords are not case-sensitive. (a=A)
+>> SQL query should end with ';'
+
+Extension --> .sql
+
+
+Database  --> Table1, Table2, Table3  --> Data 
+(Schema)
+
+Queries 
+----------
+To Create New Database ---> CREATE DATABASE dbname;
