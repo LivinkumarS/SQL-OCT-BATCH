@@ -31,6 +31,70 @@ Extension --> .sql
 Database  --> Table1, Table2, Table3  --> Data 
 (Schema)
 
+Datatypes 
+----------
+Numeric 
+---------
+INT --->  whole numbers
+BIGINT --> Very Large INT
+FLOAT --> Decimal numbers 
+DOUBLE --> Large Decimal number
+
+STRING 
+-------
+CHAR(n) --> Fixed length char string. Ex: char(5) --> "hello"
+VARCHAR(n) ---> Variable length char string. Ex: varchar(5)--> "allowed"
+TEXT ---> Paragraph
+
+DATE and TIME 
+---------------
+DATE --> 'yyyy-mm-dd'
+TIME --> 'HH:MM::SS'
+DATETIME --> both
+
+Constraints
+--------------
+>> Additional Information about a column
+PRIMARY KEY --> unique, not null. it is used to identify the data uniquely.
+
+Operators 
+----------
+== --> equal
+<>,!= ---> not equal
+> --> greater than.
+< --> lesser than.
+<= --> lesser or equal.
+>= --> greater or equal.
+
+
 Queries 
 ----------
 To Create New Database ---> CREATE DATABASE dbname;
+To Select a DB ---> USE dbname;
+To Create a Table ---> CREATE TABLE tbname (
+    col1 datatype PRIMARY KEY,
+    col2 datatype,
+    col3 datatype
+    .
+    .
+    .
+);
+
+To Create Data in a table --> INSERT INTO tbname (col details (opt)) VALUES (),(),()....;
+To Retrive Data from the table --> SELECT (col details or *) FROM tbname;
+To Update Data from a table --> UPDATE tbname SET col1="",col2=""...... filteration;
+To Delete Data from a table --> DELETE FROM tbname filteration;
+
+sql_safe_updates=1 ---> 1 data can be updated or deleted, condition should be depend on primary key.
+
+
+CRUD ---> Create Read Update Delete 
+--------------------------------------
+Create ---> INSERT
+Read ---> SELECT 
+Update ---> UPDATE
+Delete ---> DELETE
+
+WHERE 
+-------
+>> ..... WHERE condition;
