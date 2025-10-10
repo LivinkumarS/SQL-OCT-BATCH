@@ -110,7 +110,7 @@ To Create a Table ---> CREATE TABLE tbname (
 );
 
 To Create Data in a table --> INSERT INTO tbname (col details (opt)) VALUES (),(),()....;
-To Retrive Data from the table --> SELECT (col details or *) FROM tbname;
+To Retrive Data from the table --> SELECT (col details or *) FROM tbname; (to name a col at output ---> AS)
 To Update Data from a table --> UPDATE tbname SET col1="",col2=""...... filteration;
 To Delete Data from a table --> DELETE FROM tbname filteration;
 
@@ -127,3 +127,31 @@ Delete ---> DELETE
 WHERE 
 -------
 >> ..... WHERE condition;
+
+Functions in MySQL
+-------------------
+>> These are predefined operations that takes an input, process it and returns output.
+
+Numeric Functions
+-----------------
+ROUND(dec number) ---> Round off a decimal number into the nearest integer. ROUND(10.51) --> 11
+CEIL(dec number)  --> Round off a number to the next number. CEIL(10.00009)
+FLOOR(dec number) --> Round off a number to the previous integer.
+MOD(a,b) ---> a%b. returns reminder.
+ABS(num) --> absolute number of given value. ABS(-10) --> 10
+
+STRING FUNCTIONS 
+----------------
+CONCAT(str1,str2,str3.....) ---> it will attach the strings together.
+LENGTH(str) ---> Returns length of a string
+UPPER(str) ---> convert into uppercase
+LOWER(str) ---> convert into lowercase
+SUBSTRING(str, start, lenght) --> Extract a part of string. "Hello world" --> 1,5
+REPLACE(str, old, new) ---> used to replace a particular substring with other. "Hello guys" ---> Hello ---> Hi
+
+DATE AND TIME 
+--------------
+CURDATE() --> return today's date. 
+CURTIME() --> return time. 
+NOW() --> both
+DATEDIFF(date1, date1) --> difference in days. Ex: 2025-10-10, 2025-10-12--> 2
