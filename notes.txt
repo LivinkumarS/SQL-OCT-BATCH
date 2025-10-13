@@ -54,8 +54,19 @@ DATETIME --> both
 
 Constraints
 --------------
->> Additional Information about a column
-PRIMARY KEY --> unique, not null. it is used to identify the data uniquely.
+>> Constraints are rules applied to a column to control what kind of data can be stored in it.
+
+PRIMARY KEY --> unique, not null. it is used to identify the data uniquely. it can be added to only one column in a table.
+
+FOREIGN KEY --> Used to link two tables. foreign key from a table will refer to primary key of another table.
+
+AUTO_INCREMENT --> automatically generates a unique number.
+UNIQUE --> ensures all values in a cloumn are different
+NOT NULL --> no NULL values
+DEFAULT --> Assign a default value when none is provided
+CHECK (cond)--> It ensures the value meets specific condition
+
+
 
 Operators 
 ----------
