@@ -49,7 +49,7 @@ TEXT ---> Paragraph
 DATE and TIME 
 ---------------
 DATE --> 'yyyy-mm-dd'
-TIME --> 'HH:MM::SS'
+TIME --> 'HH:MM:SS'
 DATETIME --> both
 
 Constraints
@@ -166,3 +166,28 @@ CURDATE() --> return today's date.
 CURTIME() --> return time. 
 NOW() --> both
 DATEDIFF(date1, date1) --> difference in days. Ex: 2025-10-10, 2025-10-12--> 2
+
+JOINS (Combining data from multiple tables)
+------
+>> A join combines rows from two or more tables on a related column between them.
+
+INNER JOIN
+------------
+>> It returns only the records that have matching values in both tables.
+Ex: SELECT (col details) FROM table1 INNER JOIN table2 ON table1.key=table2.key;
+
+LEFT JOIN
+----------
+>> It returns all the records from left table, and the matched records from right table
+Ex: SELECT (col details) FROM table1 LEFT JOIN table2 ON table1.key=table2.key;
+
+RIGHT JOIN
+----------
+>> It returns all the records from right table, and the matched records from left table
+Ex: SELECT (col details) FROM table1 RIGHT JOIN table2 ON table1.key=table2.key;
+
+CROSS JOIN 
+----------
+>> It combines each row of the first table with each row from second table.
+ex: select c.color, s.size from color c cross join size s;
+
