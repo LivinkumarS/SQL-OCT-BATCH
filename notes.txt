@@ -191,3 +191,21 @@ CROSS JOIN
 >> It combines each row of the first table with each row from second table.
 ex: select c.color, s.size from color c cross join size s;
 
+
+Aggregate Functions
+-------------------
+>> Aggregate Functions performs calculations on multiple rows and return a single value.
+
+COUNT() ---> used to count number of rows.
+SUM() --> Adds up numeric values in a column
+AVG() --> calculate average.
+MIN() --> find smallest value.
+MAX() --> find largest value.
+
+Grouping 
+---------
+GROUP BY 
+>> Used to group the rows having the same value in one or more column.
+
+WHERE ---> Filtering Rows
+HAVING ---> Diltering Groups.
