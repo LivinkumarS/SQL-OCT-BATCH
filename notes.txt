@@ -209,3 +209,21 @@ GROUP BY
 
 WHERE ---> Filtering Rows
 HAVING ---> Diltering Groups.
+
+Sub Queries
+-----------
+>> A Suquery is a query inside another.
+
+Used to fetch results depend on another query.
+It simplifies complex logic.
+
+Single Row Subqueries 
+-----------------------
+>> Returns only one row.
+Ex: select * from productdetails where price<(select avg(price) from productdetails);
+
+Multi row subquery
+-------------------
+>> Returns more than one row
+Ex: select * from productdetails where id in
+ (select productId from availablity where isAvailable=1);
