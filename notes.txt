@@ -45,6 +45,7 @@ STRING
 CHAR(n) --> Fixed length char string. Ex: char(5) --> "hello"
 VARCHAR(n) ---> Variable length char string. Ex: varchar(5)--> "allowed"
 TEXT ---> Paragraph
+ENUM ---> Multiple choices. ("male","female")
 
 DATE and TIME 
 ---------------
@@ -138,6 +139,11 @@ Delete ---> DELETE
 WHERE 
 -------
 >> ..... WHERE condition;
+
+Altering Table 
+----------------
+Basic Syntax --> ALTER TABLE tbname .......;
+To add new column ---> ALTER TABLE tbname ADD COLUMN colname datatype Constraints....;
 
 Functions in MySQL
 -------------------
