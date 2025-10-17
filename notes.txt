@@ -227,3 +227,16 @@ Multi row subquery
 >> Returns more than one row
 Ex: select * from productdetails where id in
  (select productId from availablity where isAvailable=1);
+
+ table ---> student (id,name, dept, age )
+ table2 --> marks (id,totalmarks, studentId)
+
+Views
+------
+>> Views are virtual tables that are created based on the result of select query.
+>> It does not store data physically --> It stores only query definition.
+
+syntax:
+--------
+CREATE VIEW view_name AS SELECT.....;
+Ex: create view contact_details as select id,email,phone from student;
