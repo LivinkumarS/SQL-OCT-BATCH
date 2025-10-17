@@ -144,6 +144,14 @@ Altering Table
 ----------------
 Basic Syntax --> ALTER TABLE tbname .......;
 To add new column ---> ALTER TABLE tbname ADD COLUMN colname datatype Constraints....;
+To change column datatype ---> ALTER TABLE tbname MODIFY COLUMN colName datatype;
+To rename a column ---> ALTER TABLE tbname RENAME COLUMN oldname TO newname;
+To drop a column ---> ALTER TBALE tbname DROP COLUMN colname;
+
+To rename a table ---> ALTER TABLE tbname RENAME TO newname;
+
+To drop a table --> DROP TABLE tbname;
+To drop db --> DROP BATBASE dbname;
 
 Functions in MySQL
 -------------------
